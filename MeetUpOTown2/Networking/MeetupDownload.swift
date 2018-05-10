@@ -16,7 +16,7 @@ class MeetupDownload {
 
 	// You need to create your own api key, here: https://secure.meetup.com/meetup_api/key/
 	// and specify it here:
-	let apiKey = "22725b25d57246332554b5c6e2e242c"
+	let apiKey = "22725b25d57246332554b5c6e3eda2a"
 
 //https://api.meetup.com/2/open_events?&sign=true&photo-host=public&country=us&city=Orlando&state=fl&time=,1m&radius=100&page=20
 	
