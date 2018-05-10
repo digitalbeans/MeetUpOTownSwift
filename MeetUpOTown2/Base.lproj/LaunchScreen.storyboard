@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MeetUpOTown" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="hR2-rN-OE5">
+                                <rect key="frame" x="63" y="103.5" width="248" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PJA-BY-EAE"/>
+                                    <constraint firstAttribute="width" constant="248" id="deA-Wt-Kop"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.090196078430000007" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People-256" translatesAutoresizingMaskIntoConstraints="NO" id="afY-5R-m5Q">
+                                <rect key="frame" x="87" y="153.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MmT-Ql-Ji0"/>
+                                    <constraint firstAttribute="width" constant="200" id="hBV-Ry-VXq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2018 Digital Beans. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ych-b8-Usv">
+                                <rect key="frame" x="0.0" y="626.5" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Twb-d2-IDe">
+                                <rect key="frame" x="63.5" y="220" width="248" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="Uws-Zb-HAF"/>
+                                    <constraint firstAttribute="height" constant="43" id="Zm0-64-vWt"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="afY-5R-m5Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Ii-aj-91A"/>
+                            <constraint firstItem="Twb-d2-IDe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AfV-Hk-MGB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ych-b8-Usv" secondAttribute="bottom" constant="20" id="GWR-kH-be7"/>
+                            <constraint firstItem="hR2-rN-OE5" firstAttribute="bottom" secondItem="afY-5R-m5Q" secondAttribute="top" constant="10" id="Mrx-3z-J2a"/>
+                            <constraint firstItem="ych-b8-Usv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rhu-7y-AGy"/>
+                            <constraint firstItem="hR2-rN-OE5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xkg-bx-0rg"/>
+                            <constraint firstItem="hR2-rN-OE5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-200" id="eBg-JY-8UY"/>
+                            <constraint firstItem="Twb-d2-IDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="nSy-p2-0aK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="ych-b8-Usv" secondAttribute="leading" id="pXG-pC-8ZQ"/>
+                            <constraint firstItem="ych-b8-Usv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tmc-sR-N8L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +70,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="People-256" width="256" height="256"/>
+    </resources>
 </document>
